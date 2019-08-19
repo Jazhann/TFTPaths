@@ -1,0 +1,63 @@
+<div id="champions">
+    <div id="rolesFilterWrap">
+        <div class="roleFilter" *ngFor="let role of roles">
+            <img title="{{role}}" src="../../assets/images/{{role}}.png" (click)="selectRole(role)" alt="{{role}}" [ngClass]="{'selectedFilter': checkRoleFilter(role)}">
+        </div>
+    </div>
+    <div class="champion" *ngFor="let champion of champions">
+        <div title="{{champion.name}}" class="imageWrap" [style.background-image]="getImage(champion.name)" (click)="selectChampion(champion)" 
+        [ngClass]="{
+            'selected': champion.isSelected,
+            'sinergy': champion.sinergy && !champion.isSelected,
+            'dark': !champion.isSelected && !champion.sinergy && !noChampSelected
+        }"></div>
+        <div class="rolesWrap">
+            <div *ngFor="let role of champion.roles" class="roles">
+                <img title="{{role}}" src="../../assets/images/{{role}}.png" alt="{{role}}">
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="clear"></div>
+<div id="filters">
+    <form [formGroup]="formFilters">
+        <label>
+            Team Size: 
+            <input formControlName="teamSize" type="text" disabled/>
+        </label>
+        <button (click)="resetComposition()">Reset</button>
+    </form>
+</div>
+<div class="clear"></div>
+<div id="selectedRoles">
+    <div id="selectedRolesWrap">
+        <div class="roleSelectedRoles" *ngFor="let role of rolesPool">
+            <span>{{rolesCount[role]}}</span>
+            <img title="{{role}}" src="../../assets/images/{{role}}.png" alt="{{role}}" 
+            [ngClass]="{
+                'bonus1': bonusesPool[role] && bonusesPool[role].units === 1 && bonusesPool[role].maxUnits !== 1,
+                'bonus1e':bonusesPool[role] && bonusesPool[role].units === 1 && bonusesPool[role].maxUnits === 1,
+                'bonus2': bonusesPool[role] && bonusesPool[role].units === 2 && bonusesPool[role].maxUnits !== 2,
+                'bonus2e': bonusesPool[role] && bonusesPool[role].units === 2 && bonusesPool[role].maxUnits === 2,
+                'bonus3': bonusesPool[role] && bonusesPool[role].units === 3 && bonusesPool[role].maxUnits !== 3,
+                'bonus3e': bonusesPool[role] && bonusesPool[role].units === 3 && bonusesPool[role].maxUnits === 3,
+                'bonus4': bonusesPool[role] && bonusesPool[role].units === 4 && bonusesPool[role].maxUnits !== 4,
+                'bonus4e': bonusesPool[role] && bonusesPool[role].units === 4 && bonusesPool[role].maxUnits === 4,
+                'bonus6': bonusesPool[role] && bonusesPool[role].units === 6 && bonusesPool[role].maxUnits !== 6,
+                'bonus6e': bonusesPool[role] && bonusesPool[role].units === 6 && bonusesPool[role].maxUnits === 6,
+                'bonus9': bonusesPool[role] && bonusesPool[role].units === 9
+            }">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div id="bonuses">
+    <p *ngFor="let role of rolesPool">
+        <span *ngIf="bonusesPool[role]"> <b>{{bonusesPool[role].role | titlecase}}-{{bonusesPool[role].units}}&nbsp;:</b>&nbsp;{{bonusesPool[role].description}} </span>
+    </p>
+</div>
+<div class="clear"></div>
