@@ -106,28 +106,32 @@ export class HomeComponent implements OnInit {
    * @param role name of role
    */
   selectRole(role) {
-    this.resetComposition();
-    this.selectedRole = role;
-    let countChampions = 0;
-    this.champions.map( champion => {
-      if (_.indexOf(champion.roles, role) !== -1) {
-        champion.isSelected = true;
-        countChampions++;
-        this.championsPool.push(champion);
-        champion.roles.forEach( rol => {
-          this.rolesCount[rol]++;
-        });
-      }
-      return champion;
-    });
-    this.updatePool();
-    this.updateSinergies();
-    this.teamSize = countChampions;
-    this.formFilters.patchValue({
-      teamSize: this.teamSize
-    });
-    this.getBonus();
-    this.noChampSelected = false;
+    if (role !== this.selectedRole) {
+      this.resetComposition();
+      this.selectedRole = role;
+      let countChampions = 0;
+      this.champions.map( champion => {
+        if (_.indexOf(champion.roles, role) !== -1) {
+          champion.isSelected = true;
+          countChampions++;
+          this.championsPool.push(champion);
+          champion.roles.forEach( rol => {
+            this.rolesCount[rol]++;
+          });
+        }
+        return champion;
+      });
+      this.updatePool();
+      this.updateSinergies();
+      this.teamSize = countChampions;
+      this.formFilters.patchValue({
+        teamSize: this.teamSize
+      });
+      this.getBonus();
+      this.noChampSelected = false;
+    } else {
+      this.resetComposition();
+    }
   }
 
   /**
@@ -162,15 +166,26 @@ export class HomeComponent implements OnInit {
    */
   updateSinergies() {
     this.champions.map(champion => {
-        return champion.sinergy = false;
+      champion.sinergy2 = false;
+      return champion.sinergy = false;
     });
-    this.rolesPool.forEach( role => {
-      this.champions.map(champion => {
-        if (_.indexOf(champion.roles, role) !== -1 ) {
-          return champion.sinergy = true;
+    this.champions.map(champion => {
+        let countRoles = 0;
+        this.rolesPool.forEach( role => {
+          if (_.indexOf(champion.roles, role) !== -1 ) {
+            countRoles++;
+          }
+        });
+        switch (countRoles) {
+          case 1:
+              return champion.sinergy = true;
+              break;
+          case 2:
+              return champion.sinergy2 = true;
+              break;
         }
-      });
     });
+
   }
 
   /**
@@ -197,6 +212,7 @@ export class HomeComponent implements OnInit {
     this.teamSize = 0;
     this.champions.map(champion => {
       champion.sinergy = false;
+      champion.sinergy2 = false;
       champion.isSelected = false;
       return champion;
     });

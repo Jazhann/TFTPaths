@@ -11,7 +11,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Ahri',
@@ -21,7 +22,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'AurelionSol',
@@ -31,7 +33,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Anivia',
@@ -41,7 +44,8 @@ export class Constants {
             ],
             cost: 5,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Ashe',
@@ -51,7 +55,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Akali',
@@ -61,7 +66,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Brand',
@@ -71,7 +77,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Braum',
@@ -81,7 +88,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Blitzcrank',
@@ -91,7 +99,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Chogath',
@@ -101,7 +110,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Draven',
@@ -111,7 +121,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Darius',
@@ -121,7 +132,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         }
         ,
         {
@@ -132,7 +144,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
           {
             name: 'Elise',
@@ -142,7 +155,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Fiora',
@@ -152,7 +166,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Gnar',
@@ -163,7 +178,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Garen',
@@ -173,7 +189,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Gangplank',
@@ -184,7 +201,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Graves',
@@ -194,7 +212,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Kayle',
@@ -204,7 +223,8 @@ export class Constants {
             ],
             cost: 5,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Karthus',
@@ -214,7 +234,8 @@ export class Constants {
             ],
             cost: 5,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Kennen',
@@ -225,7 +246,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Katarina',
@@ -235,7 +257,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Kindred',
@@ -245,7 +268,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Kassadin',
@@ -255,7 +279,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Khazix',
@@ -265,7 +290,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Lissandra',
@@ -275,7 +301,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Lucian',
@@ -285,7 +312,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Lulu',
@@ -295,7 +323,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Leona',
@@ -305,7 +334,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'MissFortune',
@@ -315,7 +345,8 @@ export class Constants {
             ],
             cost: 5,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Mordekaiser',
@@ -325,7 +356,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Morgana',
@@ -335,7 +367,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Nidalee',
@@ -345,7 +378,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Pyke',
@@ -355,7 +389,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Poppy',
@@ -365,7 +400,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Rengar',
@@ -375,7 +411,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'RekSai',
@@ -385,7 +422,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Swain',
@@ -396,7 +434,8 @@ export class Constants {
             ],
             cost: 5,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Sejuani',
@@ -406,7 +445,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Shen',
@@ -416,7 +456,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Shyvana',
@@ -426,7 +467,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'TwistedFate',
@@ -436,7 +478,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Tristana',
@@ -446,7 +489,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Varus',
@@ -456,7 +500,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Vayne',
@@ -466,7 +511,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Veigar',
@@ -476,7 +522,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Volibear',
@@ -486,7 +533,8 @@ export class Constants {
             ],
             cost: 3,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Warwick',
@@ -496,7 +544,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Yasuo',
@@ -506,7 +555,8 @@ export class Constants {
             ],
             cost: 5,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Zed',
@@ -516,7 +566,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Camille',
@@ -526,7 +577,8 @@ export class Constants {
             ],
             cost: 1,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Jayce',
@@ -536,7 +588,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Jinx',
@@ -546,7 +599,8 @@ export class Constants {
             ],
             cost: 4,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         },
         {
             name: 'Vi',
@@ -556,7 +610,8 @@ export class Constants {
             ],
             cost: 2,
             isSelected: false,
-            sinergy: false
+            sinergy: false,
+            sinergy2: false
         }
     ];
     public static championName = 'name';

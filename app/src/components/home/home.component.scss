@@ -17,6 +17,7 @@
             color: white;
         }
     }
+
     button {
         -webkit-border-radius: 4;
         -moz-border-radius: 4;
@@ -25,6 +26,19 @@
         background: #929182;
         padding: 10px 20px 10px 20px;
         text-decoration: none;
+    }
+
+    #oneSinergy {
+        color: #5c7edec7;
+        margin: 0% 0.5% 0% 1%;
+        font-weight: bold;
+    }
+
+    
+    #twoSinergies {
+        color: #b7de5cc7;
+        margin: 0% 0% 0% 0.5%;
+        font-weight: bold;
     }
 }
 
@@ -68,6 +82,12 @@
             height: 4em;
             background-size: cover;
             background-position: center;
+
+            .checkSelectedChampion{
+                float: right;
+                margin: -15% -15% 0% 0%;
+
+            }
         }
 
         .rolesWrap{
@@ -100,6 +120,12 @@
             box-shadow: inset 0 0 0 3px #5c7edec7;
         }
 
+        .sinergy2{
+            -webkit-box-shadow: inset 0 0 0 3px #b7de5cc7;
+            -moz-box-shadow: inset 0 0 0 3px #b7de5cc7;
+            box-shadow: inset 0 0 0 3px #b7de5cc7;
+        }
+
         .dark {
             opacity: 0.3;
         }
@@ -117,6 +143,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 1%;
 
         .roleSelectedRoles{
             float: left;
