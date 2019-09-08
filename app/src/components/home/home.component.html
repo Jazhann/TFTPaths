@@ -13,6 +13,7 @@
             'dark': !champion.isSelected && !champion.sinergy && !champion.sinergy2 && !noChampSelected
         }">
             <img class="checkSelectedChampion"*ngIf="champion.isSelected" src="../../assets/images/greencheck.png">
+            <span class="cost" title="cost">{{champion.cost}}</span>
         </div>
         <div class="rolesWrap">
             <div *ngFor="let role of champion.roles" class="roles">
