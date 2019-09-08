@@ -612,6 +612,17 @@ export class Constants {
             isSelected: false,
             sinergy: false,
             sinergy2: false
+        },
+        {
+            name: 'Pantheon',
+            roles: [
+                'dragon',
+                'guardian'
+            ],
+            cost: 5,
+            isSelected: false,
+            sinergy: false,
+            sinergy2: false
         }
     ];
     public static championName = 'name';
