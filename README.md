@@ -1,6 +1,7 @@
 # TFTPaths
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
+Teamfight tactics champions sinergies and combinations.
+Champion pool not updated.
 
 ### Install libraries
 ```bash
