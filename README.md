@@ -8,9 +8,9 @@ Champion pool not updated.
 npm i
 ```
 
-### Build 
+### Start 
 ```bash
-npm run build
+npm run start
 ```
 
 ### Open Pull Request
