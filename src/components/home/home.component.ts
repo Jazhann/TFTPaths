@@ -104,5 +104,8 @@ export class HomeComponent implements OnInit, OnDestroy {
    */
   resetComposition() {
     this.poolService.resetComposition();
+    this.formFilters.patchValue({
+      teamSize: this.teamSize
+    });
   }
 }
