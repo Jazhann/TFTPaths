@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
 import { Champion } from 'src/models/champion';
 import { Bonus } from 'src/models/bonus';
 import { PoolService } from 'src/shared/pool.service';
@@ -7,6 +8,7 @@ import { PoolService } from 'src/shared/pool.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import * as _ from 'lodash';
 import { Subscription } from 'rxjs';
+import { DataToShare } from 'src/models/dataToShare';
 
 
 
@@ -17,13 +19,13 @@ import { Subscription } from 'rxjs';
 })
 
 export class HomeComponent implements OnInit, OnDestroy {
-  formFilters;
+  formFilters: FormGroup;
   bonusesPool: Bonus[] = [];
   champions: Champion[] = [];
   noChampSelected = true;
-  roles: [] = [];
-  rolesCount: [] = [];
-  rolesPool: [] = [];
+  roles: string[] = [];
+  rolesCount: number[] = [];
+  rolesPool: string[] = [];
   teamSize = 0;
   subscription: Subscription;
 
@@ -33,7 +35,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     private sanitizer: DomSanitizer,
     private poolService: PoolService
   ) {
-    this.subscription = this.poolService.setChampions().subscribe( data => {
+    this.subscription = this.poolService.setChampions().subscribe( (data: DataToShare) => {
       if (data) {
         const  {champions, roles, rolesPool, bonusesPool, noChampSelected, teamSize } = data;
         this.champions = champions;

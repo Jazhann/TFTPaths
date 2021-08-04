@@ -4,6 +4,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { Constants } from 'src/shared/constants';
 import { Bonus } from 'src/models/bonus';
 import { Champion } from 'src/models/champion';
+import { DataToShare } from 'src/models/dataToShare';
 
 import * as _ from 'lodash';
 
@@ -16,12 +17,12 @@ export class PoolService {
   champions: Champion[] = [...Constants.Champions];
   championsPool: Champion[] = [];
   noChampSelected = true;
-  roles = [...Constants.roles];
-  rolesCount = [];
-  rolesPool = [];
+  roles: string[]= [...Constants.roles];
+  rolesCount: number[]= [];
+  rolesPool: string[] = [];
   selectedRole = '';
   teamSize = 0;
-  dataToShare = new BehaviorSubject<any>(null);
+  dataToShare = new BehaviorSubject<DataToShare>(null);
 
   constructor() { }
 
@@ -29,7 +30,7 @@ export class PoolService {
    * Set Champion pool and return data
    * @returns Observable
    */
-  setChampions(): Observable<any> {
+  setChampions(): Observable<DataToShare> {
     this.roles.forEach(role => {
       this.rolesCount[role] = 0;
     });
@@ -38,7 +39,7 @@ export class PoolService {
     return this.dataToShare.asObservable();
   }
 
-  updateDataToShare() {
+  updateDataToShare(): void {
     this.dataToShare.next({
       champions: this.champions,
       roles: this.roles,
