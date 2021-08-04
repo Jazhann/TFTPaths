@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from '../components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LayoutComponent } from '../components/layout/layout.component';
+import { PoolService } from 'src/shared/pool.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { LayoutComponent } from '../components/layout/layout.component';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [PoolService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
