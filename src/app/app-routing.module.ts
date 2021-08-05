@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LayoutComponent } from 'src/components/layout/layout.component';
+
 
 
 const routes: Routes = [
-  { path: '', component: LayoutComponent, pathMatch: 'full' },
-  { path: '**', component: LayoutComponent, pathMatch: 'full' }
+  {
+    path: '',
+    loadChildren: () => import('../modules/pool/pool.module').then(m => m.PoolModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('../modules/pool/pool.module').then(m => m.PoolModule)
+  }
 ];
 
 @NgModule({

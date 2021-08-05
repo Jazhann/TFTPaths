@@ -211,6 +211,7 @@ export class PoolService {
       champion.isSelected = false;
       return champion;
     });
+    this.setChampions();
     this.updateDataToShare();
   }
 

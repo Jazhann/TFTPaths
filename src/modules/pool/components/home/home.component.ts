@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { Champion } from 'src/models/champion';
 import { Bonus } from 'src/models/bonus';
-import { PoolService } from 'src/shared/pool.service';
+import { PoolService } from 'src/modules/pool/services/pool.service';
 
 import { DomSanitizer } from '@angular/platform-browser';
 import * as _ from 'lodash';
