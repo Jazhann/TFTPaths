@@ -1,11 +1,11 @@
 <div id="champions">
     <div id="rolesFilterWrap">
         <div class="roleFilter" *ngFor="let role of roles">
-            <img title="{{role}}" src="../../assets/images/{{role}}.png" (click)="selectRole(role)" alt="{{role}}" [ngClass]="{'selectedFilter': checkRoleFilter(role)}">
+            <img title="{{role}}" src="../../assets/images/traits/{{role.toLowerCase()}}.png" (click)="selectRole(role)" alt="{{role}}" [ngClass]="{'selectedFilter': checkRoleFilter(role)}">
         </div>
     </div>
     <div class="champion" *ngFor="let champion of champions">
-        <div title="{{champion.name}}" class="imageWrap" [style.background-image]="getImage(champion.name)" (click)="selectChampion(champion)" 
+        <div title="{{champion.name}}" class="imageWrap" [style.background-image]="getImage(champion.img)" (click)="selectChampion(champion)" 
         [ngClass]="{
             'selected': champion.isSelected,
             'sinergy': champion.sinergy && !champion.isSelected,
@@ -17,7 +17,7 @@
         </div>
         <div class="rolesWrap">
             <div *ngFor="let role of champion.roles" class="roles">
-                <img title="{{role}}" src="../../assets/images/{{role}}.png" alt="{{role}}">
+                <img title="{{role }}" src="../../assets/images/traits/{{role.toLowerCase()}}.png" alt="{{role}}">
             </div>
             <div class="clear"></div>
         </div>
@@ -41,7 +41,7 @@
     <div id="selectedRolesWrap">
         <div class="roleSelectedRoles" *ngFor="let role of rolesPool">
             <span>{{rolesCount[role]}}</span>
-            <img title="{{role}}" src="../../assets/images/{{role}}.png" alt="{{role}}" 
+            <img title="{{role}}" src="../../assets/images/traits/{{role.toLowerCase()}}.png" alt="{{role}}" 
             [ngClass]="{
                 'bonus1': bonusesPool[role] && bonusesPool[role].units === 1 && bonusesPool[role].maxUnits !== 1,
                 'bonus1e':bonusesPool[role] && bonusesPool[role].units === 1 && bonusesPool[role].maxUnits === 1,

@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit, OnDestroy {
    * @param name Champion name
    */
   getImage(name) {
-    return this.sanitizer.bypassSecurityTrustStyle(`url(${'../../assets/images/' + name + '.png'})`);
+    return this.sanitizer.bypassSecurityTrustStyle(`url(${'../../assets/images/champions/' + name + '.png'})`);
   }
 
 

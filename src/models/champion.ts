@@ -1,6 +1,7 @@
 export class Champion {
     constructor(
         public name: string,
+        public img: string,
         public roles: string[],
         public cost: number,
         public isSelected: boolean,
