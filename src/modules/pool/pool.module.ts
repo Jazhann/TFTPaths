@@ -9,13 +9,10 @@ import { PoolService } from 'src/modules/pool/services/pool.service';
 import { LayoutComponent } from './components/layout/layout.component';
 import { HomeComponent } from './components/home/home.component';
 
-import { removeSetPipe } from 'src/pipes/removeSet.pipe';
-
 @NgModule({
   declarations: [
     LayoutComponent,
-    HomeComponent,
-    removeSetPipe
+    HomeComponent
   ],
   imports: [
     CommonModule,
