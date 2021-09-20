@@ -7,10 +7,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PoolService } from 'src/modules/pool/services/pool.service';
 
 import { PoolComponent } from './components/pool/pool.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
-    PoolComponent
+    PoolComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,

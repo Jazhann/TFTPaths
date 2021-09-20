@@ -5,7 +5,6 @@ import { Champion } from 'src/models/champion';
 import { Bonus } from 'src/models/bonus';
 import { PoolService } from 'src/modules/pool/services/pool.service';
 
-import { DomSanitizer } from '@angular/platform-browser';
 import * as _ from 'lodash';
 import { Subscription } from 'rxjs';
 import { DataToShare } from 'src/models/dataToShare';
@@ -32,7 +31,6 @@ export class PoolComponent implements OnInit, OnDestroy {
 
   constructor(
     private fb: FormBuilder,
-    private sanitizer: DomSanitizer,
     private poolService: PoolService
   ) {
     this.subscription = this.poolService.setChampions().subscribe( (data: DataToShare) => {
@@ -59,15 +57,6 @@ export class PoolComponent implements OnInit, OnDestroy {
       this.subscription.unsubscribe();
     }
   }
-
-  /**
-   * Get champion image
-   * @param name Champion name
-   */
-  getImage(name) {
-    return this.sanitizer.bypassSecurityTrustStyle(`url(${'../../assets/images/champions/' + name + '.png'})`);
-  }
-
 
   /**
    * Select or unselect champion

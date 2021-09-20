@@ -1,0 +1,16 @@
+<div title="{{champion.name}}" class="imageWrap" [style.background-image]="getImage(champion.img)" (click)="selectChampion(champion)" 
+[ngClass]="{
+    'selected': champion.isSelected,
+    'sinergy': champion.sinergy && !champion.isSelected,
+    'sinergy2': champion.sinergy2 && !champion.isSelected,
+    'dark': !champion.isSelected && !champion.sinergy && !champion.sinergy2 && !noChampSelected
+}">
+    <img class="checkSelectedChampion"*ngIf="champion.isSelected" src="../../assets/images/greencheck.png">
+    <span class="cost" title="cost">{{champion.cost}}</span>
+</div>
+<div class="rolesWrap">
+    <div *ngFor="let role of champion.roles" class="roles">
+        <img title="{{role }}" src="../../assets/images/traits/{{role.toLowerCase()}}.png" alt="{{role}}">
+    </div>
+    <div class="clear"></div>
+</div>
