@@ -6,13 +6,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { PoolService } from 'src/modules/pool/services/pool.service';
 
-import { LayoutComponent } from './components/layout/layout.component';
-import { HomeComponent } from './components/home/home.component';
+import { PoolComponent } from './components/pool/pool.component';
 
 @NgModule({
   declarations: [
-    LayoutComponent,
-    HomeComponent
+    PoolComponent
   ],
   imports: [
     CommonModule,

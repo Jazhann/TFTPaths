@@ -6,11 +6,11 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('../modules/pool/pool.module').then(m => m.PoolModule)
+    loadChildren: () => import('../modules/layout/layout.module').then(m => m.LayoutModule)
   },
   {
     path: '**',
-    loadChildren: () => import('../modules/pool/pool.module').then(m => m.PoolModule)
+    loadChildren: () => import('../modules/layout/layout.module').then(m => m.LayoutModule)
   }
 ];
 

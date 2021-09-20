@@ -13,12 +13,12 @@ import { DataToShare } from 'src/models/dataToShare';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-pool',
+  templateUrl: './pool.component.html',
+  styleUrls: ['./pool.component.scss']
 })
 
-export class HomeComponent implements OnInit, OnDestroy {
+export class PoolComponent implements OnInit, OnDestroy {
   formFilters: FormGroup;
   bonusesPool: Bonus[] = [];
   champions: Champion[] = [];

@@ -20,6 +20,7 @@ export class Constants {
     public static championName = 'name';
 
     public static roles = traits.map(trait => trait.name);
+
     public static bonuses: Bonus [] = traits.reduce((previous, current)  => {
         current.sets.forEach(set => {
             previous.push({

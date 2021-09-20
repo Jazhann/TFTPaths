@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LayoutComponent } from 'src/modules/pool/components/layout/layout.component';
+import { PoolComponent } from './components/pool/pool.component';
 
 
 const routes: Routes = [
-  { path: '', component: LayoutComponent, pathMatch: 'full' },
-  { path: '**', component: LayoutComponent, pathMatch: 'full' }
+  { path: '', component: PoolComponent, pathMatch: 'full' },
+  { path: '**', component: PoolComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
