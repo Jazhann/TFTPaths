@@ -152,11 +152,10 @@ export class PoolService {
    * Update role pool
    */
   updatePool() {
-    let pool = [];
+    this.rolesPool = [];
     this.championsPool.forEach(champion => {
-      pool = _.union(this.rolesPool, champion.roles);
+      this.rolesPool = _.union(this.rolesPool, champion.roles);
     });
-    this.rolesPool = pool;
   }
 
   /**
