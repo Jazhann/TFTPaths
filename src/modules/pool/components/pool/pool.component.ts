@@ -35,7 +35,7 @@ export class PoolComponent implements OnInit, OnDestroy {
   ) {
     this.subscription = this.poolService.setChampions().subscribe( (data: DataToShare) => {
       if (data) {
-        const  {champions, roles, rolesPool, bonusesPool, noChampSelected, teamSize } = data;
+        const  {champions, roles, rolesPool, bonusesPool, noChampSelected, teamSize} = data;
         this.champions = champions;
         this.roles = roles;
         this.rolesPool = rolesPool;

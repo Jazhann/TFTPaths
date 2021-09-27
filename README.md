@@ -2,7 +2,9 @@
 # TFTPaths
 
 Angular website based in Teamfight Tactics champions sinergies and combinations.
-Champion pool not updated.
+Champion pool not updated. 
+
+It can be tested at: https://tftpaths.com
 
 ### Install libraries
 ```bash
