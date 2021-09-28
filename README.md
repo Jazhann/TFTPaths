@@ -2,7 +2,7 @@
 # TFTPaths
 
 Angular website based in Teamfight Tactics champions sinergies and combinations.
-Champion pool updated to 5.5
+Champion pool set updated to 5.5
 
 It can be tested at: https://tftpaths.com
 
