@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 import { DomSanitizer } from '@angular/platform-browser';
 
-import { Champion } from 'src/models/champion';
+import { Champion } from '@models/champion';
 
 
 @Component({

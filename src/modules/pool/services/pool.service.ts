@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { Constants } from 'src/shared/constants';
-import { Bonus } from 'src/models/bonus';
-import { Champion } from 'src/models/champion';
-import { DataToShare } from 'src/models/dataToShare';
+import { Constants } from '@shared/constants';
+import { Bonus } from '@models/bonus';
+import { Champion } from '@models/champion';
+import { DataToShare } from '@models/dataToShare';
 
 import * as _ from 'lodash';
 
@@ -138,11 +138,7 @@ export class PoolService {
   getBonus() {
     this.bonusesPool = [];
     this.bonuses.forEach(bonus => {
-      if (bonus.role === 'ninja') {
-        if (this.rolesCount[bonus.role] === bonus.units) {
-          this.bonusesPool[bonus.role] = bonus;
-        }
-      } else if (bonus.units <= this.rolesCount[bonus.role]) {
+     if (bonus.units <= this.rolesCount[bonus.role]) {
         this.bonusesPool[bonus.role] = bonus;
       }
     });

@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PoolRoutingModule } from './pool-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { PoolService } from 'src/modules/pool/services/pool.service';
+import { PoolService } from '@modules/pool/services/pool.service';
 
 import { PoolComponent } from './components/pool/pool.component';
 import { CardComponent } from './components/card/card.component';

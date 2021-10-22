@@ -1,7 +1,7 @@
-import { Champion } from 'src/models/champion';
-import { Bonus } from 'src/models/bonus';
-import champions from './champions.json';
-import traits from './traits.json';
+import { Champion } from '@models/champion';
+import { Bonus } from '@models/bonus';
+import champions from '@assets/data/champions.json';
+import traits from '@assets/data/traits.json';
 
 export class Constants {
     public static Champions: Champion [] = champions.map(champion => {

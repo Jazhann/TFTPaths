@@ -1,13 +1,13 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
-import { Champion } from 'src/models/champion';
-import { Bonus } from 'src/models/bonus';
-import { PoolService } from 'src/modules/pool/services/pool.service';
+import { Champion } from '@models/champion';
+import { Bonus } from '@models/bonus';
+import { PoolService } from '@modules/pool/services/pool.service';
 
 import * as _ from 'lodash';
 import { Subscription } from 'rxjs';
-import { DataToShare } from 'src/models/dataToShare';
+import { DataToShare } from '@models/dataToShare';
 
 
 
