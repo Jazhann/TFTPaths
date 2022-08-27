@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 import { Champion } from '@models/champion';
 import { Bonus } from '@models/bonus';
@@ -18,7 +18,7 @@ import { DataToShare } from '@models/dataToShare';
 })
 
 export class PoolComponent implements OnInit, OnDestroy {
-  formFilters: FormGroup;
+  formFilters: UntypedFormGroup;
   bonusesPool: Bonus[] = [];
   champions: Champion[] = [];
   noChampSelected = true;
@@ -30,7 +30,7 @@ export class PoolComponent implements OnInit, OnDestroy {
 
 
   constructor(
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private poolService: PoolService
   ) {
     this.subscription = this.poolService.setChampions().subscribe( (data: DataToShare) => {
